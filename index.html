@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آپلود فایل PDF</title>
+</head>
+<body>
+    <h1>آپلود فایل PDF</h1>
+    
+    <!-- فرم آپلود فایل -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">فایل PDF خود را انتخاب کنید:</label>
+        <input type="file" id="file" name="file" accept="application/pdf" required>
+        <br><br>
+        <button type="submit">آپلود فایل</button>
+    </form>
+
+    <hr>
+
+    <!-- بخش نمایش پیغام بعد از آپلود -->
+    <div id="message"></div>
+
+</body>
+</html>
